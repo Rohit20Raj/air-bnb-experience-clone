@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Header goes here */
+.navbar{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+  box-shadow: 0 3px 10px ;
+  height: 4vh;
+  width: 100vw;
+  background-color: white;
+  opacity: 100%;
+}
+.logo{
+  margin-left: 2vh;
+}
+
+/* Content goes here */
+.content{
+  /* margin-top: 5vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.image_1{
+  margin: auto;
+  margin-top: 8vh;
+  width: 80vw;
+}
+.body-text{
+  font-family: 'Poppins', sans-serif;
+  margin: 5vh;
+}
+.text{
+  font-size: small;
+  width: 60vw;
+}
+
+/* Posts and Cards go here */
+.posts{
+  display: flex;
+  flex-direction: row;
+  /* padding: 5vh; */
+  /* margin: 3vh; */
+  margin-top: 0vh;
+  overflow-x: scroll;
+  font-size: small;
+}
+ .posts::-webkit-scrollbar {
+  width: 0em;
+}
+ /*
+.posts::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.posts::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+  width: 20vh;
+  /* box-shadow: 1px 10px 10px; */
+}
+.coverImg>img{
+  width: 20vh;
+}
+.stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stats>span{
+  margin: 4px;
+}
+.badge{
+  position: absolute;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: fit-content;
+  border-radius: 3px;
+  padding: 2px;
+  /* z-index: 1; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
